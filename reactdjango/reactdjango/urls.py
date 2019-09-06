@@ -3,6 +3,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # Front end loads before leads IMPORTANT
-    path("", include("frontend.urls")),
-    path('', include("leads.urls"))
+    path('', include("frontend.urls")),
+    path('', include("leads.urls")),
+    path("", include("accounts.urls"))
 ]
